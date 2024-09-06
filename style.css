@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size:var(--Font-size);
+    font-family: "Inter", sans-serif;
+}
+
+
+:root{
+
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey-700: hsl(0, 0%, 20%);
+    --Grey-800: hsl(0, 0%, 12%);
+    --Grey-900: hsl(0, 0%, 8%);
+    --Font-size: 14px;
+    
+}
+
+body{
+
+    background-color: var(--Grey-900);
+    color: var(--White);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.profile-container{
+    background-color: var(--Grey-800);
+    border-radius: 8px;
+    padding: 2rem;
+    width: 21%;
+    min-width: 290px;
+}
+
+
+.profile-info{
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 1.5rem;
+
+}
+
+.profile-info img{
+    width: 70px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top:.3rem;
+}
+.profile-name{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    align-items: center;
+}
+.profile-name p{
+    font-size: 1.5rem;
+   
+}
+.profile-name span{
+    color:var(--Green);
+    font-size: 0.8rem;
+}
+.profile-description{
+    font-size: 0.9rem;
+}
+
+
+.profile-buttons{
+
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+    margin-top: 1.5rem;
+
+}
+
+.profile-buttons button{
+    border: none;
+    font-size: .8rem;
+    font-weight: 600;
+    padding: 0.7rem;
+    border-radius: 0.5rem;
+    background-color: var(--Grey-700);
+    color: var(--White);
+}
+.profile-buttons button:hover{
+    background-color: var(--Green);
+    color: var(--Grey-900);
+    transition: .7s;
+    cursor: pointer;
+}
+
+
